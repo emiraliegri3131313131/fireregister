@@ -241,8 +241,8 @@ client.on("guildMemberAdd", member => {
   const gecen = moment.duration(kurulus).format(`YY **[Yıl,]** DD **[Gün,]** HH **[Saat,]** mm **[Dakika,]** ss **[Saniye]**`) 
    
     var kontrol;
-  if (kurulus < 1296000000) kontrol = '❌'
-  if (kurulus > 1296000000) kontrol = '✅'
+  if (kurulus < 1296000000) kontrol = '<a:carpixd:791446989958545428>'
+  if (kurulus > 1296000000) kontrol = '<a:tikcik:791446947252535326>'
   moment.locale("tr");
   kanal.send(":tada: Sunucumuza Hoş Geldin ! <@" + member + "> \n\n Hesabın "+ gecen +" Önce Oluşturulmuş "+kontrol+" \n\n Sunucu kurallarımız <#791442109713481748> kanalında belirtilmiştir. Unutma sunucu içerisinde ki ceza işlemlerin kuralları okuduğunu varsayarak gerçekleştirilecek. \n\n Seninle beraber " + member.guild.memberCount + " kişi olduk , Tagımızı alarak bizlere destek olabilirsin , Kayıt olmak için teyit odalarına girip ses teyit vermen gerekiyor <@&791442056802205747> seninle ilgilenecektir  İyi eğlenceler !")
   });
